@@ -14,6 +14,7 @@
 		E2DA44D31C9B939300EB5A42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DA44D11C9B939300EB5A42 /* LaunchScreen.storyboard */; };
 		E2DA44DE1C9B939400EB5A42 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA44DD1C9B939400EB5A42 /* CalculatorTests.swift */; };
 		E2DA44E91C9B939400EB5A42 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA44E81C9B939400EB5A42 /* CalculatorUITests.swift */; };
+		E2FF33671CA7368700E56A3A /* CalculatorDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FF33661CA7368700E56A3A /* CalculatorDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E2DA44E41C9B939400EB5A42 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DA44E81C9B939400EB5A42 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		E2DA44EA1C9B939500EB5A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2FF33661CA7368700E56A3A /* CalculatorDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E2DA44CF1C9B939300EB5A42 /* Assets.xcassets */,
 				E2DA44D11C9B939300EB5A42 /* LaunchScreen.storyboard */,
 				E2DA44D41C9B939400EB5A42 /* Info.plist */,
+				E2FF33661CA7368700E56A3A /* CalculatorDataModel.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DA44CB1C9B939300EB5A42 /* ViewController.swift in Sources */,
+				E2FF33671CA7368700E56A3A /* CalculatorDataModel.swift in Sources */,
 				E2DA44C91C9B939300EB5A42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				E2DA44EF1C9B939500EB5A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2DA44F01C9B939500EB5A42 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				E2DA44F21C9B939500EB5A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2DA44F31C9B939500EB5A42 /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				E2DA44F51C9B939500EB5A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
