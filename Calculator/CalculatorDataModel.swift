@@ -23,11 +23,9 @@ private var operation = ""
         return String(result)
     }
     
-    func setOperationAndNumber(let operation: String, let secondNum: String){
+    func setOperationAndNumber(let operation: String, let firstNum: String){
         self.operation = operation
-        firstNumber = secondNumber
-        secondNumber = Double(secondNum)!
-        print("first Number =\(firstNumber) operator =\(operation) second number = \(secondNumber)")
+        firstNumber = Double(firstNum)!
     }
     
     func getResult () -> String {
@@ -35,8 +33,8 @@ private var operation = ""
     }
     
     func calculate(let secondNum: String) ->String{
-        firstNumber = secondNumber
         secondNumber = Double(secondNum)!
+        
         switch operation {
         case "+":
             result = firstNumber + secondNumber

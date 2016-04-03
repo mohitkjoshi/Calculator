@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayLable: UILabel!
     
     @IBAction func buttonPressed(sender: UIButton) {
-//      print("button pressed \(sender.titleLabel!.text!)")
+
         if(calculationComplete) {
             calculator.reset();
             displayLable.text = calculator.getResult()
@@ -42,16 +42,16 @@ class ViewController: UIViewController {
      }
 
     /* New operation could be / * - + = which will prompt us to
-    calculate and display
-    Either this could be the operator, or this could be instruction to calculate.
-
+    save first Number and operator
     */
     @IBAction func operatorSelected(sender: UIButton) {
-        calculator.setOperationAndNumber(sender.titleLabel!.text!, secondNum: displayLable.text!)
+        calculator.setOperationAndNumber(sender.titleLabel!.text!, firstNum: displayLable.text!)
         displayLable.text = calculator.getResult()
         
     }
     
+    /*User selects =, we need to calculate
+    */
     @IBAction func calculate(sender: AnyObject) {
         displayLable.text = calculator.calculate(displayLable.text!)
         calculationComplete = true
